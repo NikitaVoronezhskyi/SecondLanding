@@ -320,6 +320,9 @@ body {
     font-size: 40px;
     font-weight: 700;
 }
+.text-color-404{
+    color: var(--dark-grey);
+}
 
 .btn{
     cursor: pointer;
@@ -425,13 +428,13 @@ body {
     flex-direction: column;
 }
 
-.how-content-block{
+.content-block{
     display: flex;
     background-color: var(--light-blue);
     align-items: center;
 }
 
-.how-content-block-text{
+.content-block-text{
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -449,13 +452,13 @@ body {
 .projects{
     display: flex;
     gap: 120px;
+    margin-top: 94px;
 }
 .project>.common-heading{
     color: var(--main-color);
 }
 
 .project{
-    margin-top: 94px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -464,3 +467,35 @@ body {
     flex-direction: column-reverse;
 }
 
+.testimonial{
+    display: flex;
+    gap: 100px;
+}
+
+.testimonial-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.numbers{
+    align-items: center;
+    display: flex;
+    gap: 120px;
+}
+.number>.common-text{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.number>.common-lg-text{
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.content-block-text>.common-text{
+    font-style: italic;
+    font-size: 25px;
+}
+.Roscoe{
+    color: var(--main-color);
+}
