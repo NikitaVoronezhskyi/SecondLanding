@@ -492,10 +492,64 @@ body {
     color: var(--main-color);
 }
 
-.content-block-text>.common-text{
+.testimonial-text>.common-text{
     font-style: italic;
     font-size: 25px;
 }
 .Roscoe{
     color: var(--main-color);
+}
+
+.contact-us{
+    display: flex;
+    gap: 105px;
+}
+.contact-padding{
+    padding: 120px 0px 335px 0px;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form{
+    border: 1px solid var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 55px 35px;
+    width: 100%;
+}
+.form-div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    height: 88px;
+    font-family: Poppins;
+    border: none;
+    border-bottom: 1px solid var(--light-grey);
+    font-size: 25px;
+    font-weight: 500;
+}
+.description-input{
+    height: 160px;
+    border: none;
+}
+
+
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
 }
