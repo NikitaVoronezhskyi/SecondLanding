@@ -305,10 +305,12 @@ body {
 .common-text{
     font-size: 30px;
     line-height: 1.5;
+    color: var(--light-grey);
 }
 .common-lg-text{
     font-size: 80px;
     font-weight: 800;
+    color: var(--black);    
 }
 .common-sm-text{
     font-size: 20px;
@@ -345,8 +347,13 @@ body {
     padding: 120px 0px
 }
 
+.section-heading{
+    text-align: center;
+}
+
 /* ----------------------------COMMON END-------------------------------- */
 .navbar{
+    margin-top: 85px;
     display: flex;
     justify-content: space-between;
     flex: 1;
@@ -411,10 +418,6 @@ body {
     display: flex;
 }
 
-.how-header{
-    text-align: center;
-}
-
 .how-block{
     margin-top: 71px;
     display: flex;
@@ -440,5 +443,24 @@ body {
 }
 
 .second-block{
-    background: none;
+    background: inherit;
 }
+
+.projects{
+    display: flex;
+    gap: 120px;
+}
+.project>.common-heading{
+    color: var(--main-color);
+}
+
+.project{
+    margin-top: 94px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.project-workspace{
+    flex-direction: column-reverse;
+}
+
