@@ -305,7 +305,6 @@ body {
 .common-text{
     font-size: 30px;
     line-height: 1.5;
-    font-weight: 500;
 }
 .common-lg-text{
     font-size: 80px;
@@ -314,8 +313,13 @@ body {
 .common-sm-text{
     font-size: 20px;
 }
+.common-heading{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 700;
+}
 
-.common-btn{
+.btn{
     cursor: pointer;
     border-radius: 15px;
     font-size: 25px;
@@ -328,14 +332,21 @@ body {
     transition: 0.3s;
 }
 
-.common-btn:hover{
+.btn:hover{
     color: var(--main-color);
     background-color: transparent;
 }
 
+.btn-notrounded{
+    border-radius: 15px 15px 15px 0px;
+}
+
+.section-padding{
+    padding: 120px 0px
+}
+
 /* ----------------------------COMMON END-------------------------------- */
 .navbar{
-    padding: 85px 0px;
     display: flex;
     justify-content: space-between;
     flex: 1;
@@ -371,4 +382,63 @@ body {
 .logo-img{
     width: 37px;
     height: 45px;
+}
+
+.promo-block{
+    display: flex;
+    gap: 71px;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 833px 732px;
+}
+
+.promo-text{
+    display: flex;
+    flex-direction: column;
+    width: 48.2%;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.octagon{
+    display: flex;
+    justify-content: center;
+    background: url(../img/Octagone.png) no-repeat center/cover;
+    background-size: 95%
+}
+
+.how-it-works{
+    display: flex;
+}
+
+.how-header{
+    text-align: center;
+}
+
+.how-block{
+    margin-top: 71px;
+    display: flex;
+    gap: 150px;
+    flex-direction: column;
+}
+
+.how-content-block{
+    display: flex;
+    background-color: var(--light-blue);
+    align-items: center;
+}
+
+.how-content-block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 70px 110px;
+}
+
+.see-video{
+    font-weight: 500;
+}
+
+.second-block{
+    background: none;
 }
