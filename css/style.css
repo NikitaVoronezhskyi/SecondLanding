@@ -442,11 +442,14 @@ body {
     gap: 50px;
     align-items: flex-start;
 }
+.promo-img{
+    z-index: -1;
+}
 
 .octagon {
     display: flex;
     justify-content: center;
-    background: url(../img/Octagone.svg) no-repeat center/cover;
+    background: url(../img/OctagoneImgpng.webp) no-repeat center/cover;
     background-size: 95%
 }
 
@@ -905,7 +908,7 @@ body {
         .second-img {
             max-width: inherit;
             height: 350px;
-            width: 300px;
+            width: 346px;
         }
 
         .woman-img {
