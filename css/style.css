@@ -446,7 +446,7 @@ body {
 .octagon {
     display: flex;
     justify-content: center;
-    background: url(../img/Octagone.png) no-repeat center/cover;
+    background: url(../img/Octagone.svg) no-repeat center/cover;
     background-size: 95%
 }
 
@@ -584,7 +584,6 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 25px;
-    align-items: flex-start;
     justify-content: space-between;
     padding: 55px 35px;
     width: 100%;
@@ -899,16 +898,19 @@ body {
         }
 
         .promo-img {
+            height: 350px;
             width: 350px;
         }
 
         .second-img {
             max-width: inherit;
+            height: 350px;
             width: 300px;
         }
 
         .woman-img {
             max-width: 100%;
+            height: 341px;
             width: 300px;
         }
 
