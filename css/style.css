@@ -512,9 +512,15 @@ body {
     display: flex;
     align-items: flex-start;
 }
+.third-block{
+    flex-direction: row-reverse;
+}
 
 .second-img {
     max-height: 650px;
+}
+.eco-img{
+    width: 50%;
 }
 
 .projects {
@@ -878,6 +884,9 @@ body {
 
         .second-img {
             max-width: 50%;
+        }
+        .eco-img{
+            width: 80%;
         }
 
         .projects {
