@@ -399,10 +399,10 @@ body {
     border:none;
 }
 .burgerLine{
-    width: 35px;
+    width: 30px;
     height: 4px;
     background-color: #333;
-    margin: 8px 0;
+    margin: 7px 0;
     transition: 0.3s;
 }
 
@@ -812,6 +812,9 @@ body {
         .burgerLine3{
             transform-origin: 0%;
         }
+        body.burger-active{
+            overflow: hidden;
+        }
         body.burger-active .desktop-nav{
             visibility: visible;
             transform: translateX(0);
@@ -825,6 +828,7 @@ body {
         }
         body.burger-active .burger-btn>.burgerLine3{    
             transform: rotate(-45deg);
+            
         }
         .nav{
             flex: initial;
