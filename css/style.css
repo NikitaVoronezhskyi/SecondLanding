@@ -357,6 +357,12 @@ body {
     transition: 0.3s;
 }
 
+.play-btn{
+    cursor: pointer;
+    border: none;
+    background: inherit;
+}
+
 .btn:hover {
     color: var(--main-color);
     background-color: transparent;
@@ -504,6 +510,8 @@ body {
 }
 
 .see-video {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
 }
 

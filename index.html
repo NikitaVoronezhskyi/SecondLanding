@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home Interior" />
+    <script src="https://kit.fontawesome.com/7cc25a8466.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Locus</title>
-    <script src="https://kit.fontawesome.com/7cc25a8466.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                     </ul>
                     <button class="btn">Sign Up</button>
                 </div>
-                <button class="burger-btn">
+                <button aria-label="Burger" class="burger-btn">
                     <div class="burgerLine burgerLine1"></div>
                     <div class="burgerLine burgerLine2"></div>
                     <div class="burgerLine burgerLine3"></div>
@@ -76,20 +76,22 @@
                     <h3 class="common-text text-color-404">Spice up your space even simpler <br> than you think</h3>
                 </div>
                 <div class="how-block">
-                    <div class="content-block first-block">
+                    <article class="content-block first-block">
                         <img class="first-image" src="./img/FirstblockImg.webp" alt="FirstblockImg">
-                        <button class="rounded-btn">
-
-                        </button>
                         <div class="content-block-text">
                             <p class="common-text common-sm-text">We provide design and build
                                 for commercial building,
                                 interior and furniture to improve
                                 the better life.</p>
-                            <p class="common-text common-sm-text see-video">S E E V I D E O</p>
+                            <div class="common-text common-sm-text see-video">
+                                <p>S E E V I D E O</p>
+                                <button aria-label="Play Video" class="play-btn">
+                                    <i class="fa-regular fa-circle-play"></i>                                       
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content-block second-block">
+                    </article>
+                    <article class="content-block second-block">
                         <img class="second-img" src="./img/SecondblockImg.webp" alt="SecondblockImg">
                         <div class="content-block-text second-text">
                             <h4 class="common-text common-heading">
@@ -105,8 +107,8 @@
                                 our homes.
                             </p>
                         </div>
-                    </div>
-                    <div class="content-block second-block third-block">
+                    </article>
+                    <article class="content-block second-block third-block">
                         <img class="eco-img" src="./img/Eco.webp" alt="EcoFriendly">
                         <div class="content-block-text second-text">
                             <h4 class="common-text common-heading">
@@ -116,7 +118,7 @@
                                 By creating our designs,we are using the most efficient and estetic ideas to make you feel closer to the nature.
                             </p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
