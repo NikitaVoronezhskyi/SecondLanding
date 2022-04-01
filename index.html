@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
@@ -8,7 +9,9 @@
     <meta name="description" content="Home Interior" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Locus</title>
+    <script src="https://kit.fontawesome.com/7cc25a8466.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -26,32 +29,45 @@
                     </ul>
                     <button class="btn">Sign Up</button>
                 </div>
+                <button class="burger-btn">
+                    <div class="burgerLine burgerLine1"></div>
+                    <div class="burgerLine burgerLine2"></div>
+                    <div class="burgerLine burgerLine3"></div>
+                </button>
+                <script>
+                    document.body.addEventListener('click', (e) => {
+                        const burgerBtn = e.target.closest('.burger-btn')
+                        if (burgerBtn){
+                            document.body.classList.toggle('burger-active')
+                        }
+                    })
+                </script>
             </nav>
         </div>
     </header>
     <main>
         <section class="promo section-padding">
-                <div class="promo-block container">
-                    <div class="promo-text">
-                        <h1 class="common-text common-lg-text">
-                            Get the inspiration
-                            of interior design 
-                            here
-                        </h1>
-                        <p class="common-text text-color-404">
-                            architecture not only about engineering, it even 
-                            lands to art and aesthetics. With us, you will get 
-                            a residentical design with an extraordinary touch 
-                            of art.
-                        </p>
-                        <button class="btn btn-notrounded">
-                            Let’s go
-                        </button>
-                    </div>
-                    <div class="octagon">
-                        <img class="promo-img" src="./img/Octagone.svg" alt="Design">
-                    </div>
+            <div class="promo-block container">
+                <div class="promo-text">
+                    <h1 class="common-text common-lg-text">
+                        Get the inspiration
+                        of interior design
+                        here
+                    </h1>
+                    <p class="common-text text-color-404">
+                        architecture not only about engineering, it even
+                        lands to art and aesthetics. With us, you will get
+                        a residentical design with an extraordinary touch
+                        of art.
+                    </p>
+                    <button class="btn btn-notrounded">
+                        Let’s go
+                    </button>
                 </div>
+                <div class="octagon">
+                    <img class="promo-img" src="./img/Octagone.svg" alt="Design">
+                </div>
+            </div>
         </section>
         <section class="how-it-works section-padding">
             <div class="container">
@@ -61,28 +77,31 @@
                 </div>
                 <div class="how-block">
                     <div class="content-block first-block">
-                        <img class="first-image" src="./img/FirstblockImg.webp" alt="FirstblockImg" >
+                        <img class="first-image" src="./img/FirstblockImg.webp" alt="FirstblockImg">
+                        <button class="rounded-btn">
+
+                        </button>
                         <div class="content-block-text">
-                            <p class="common-text common-sm-text">We provide design and build 
-                                for commercial building, 
-                                interior and furniture to improve 
+                            <p class="common-text common-sm-text">We provide design and build
+                                for commercial building,
+                                interior and furniture to improve
                                 the better life.</p>
-                            <p class="common-text common-sm-text see-video">S E E  V I D E O</p>
+                            <p class="common-text common-sm-text see-video">S E E V I D E O</p>
                         </div>
                     </div>
                     <div class="content-block second-block">
                         <img class="second-img" src="./img/SecondblockImg.webp" alt="SecondblockImg">
                         <div class="content-block-text second-text">
                             <h4 class="common-text common-heading">
-                                Our mission is to 
-                                deliver aesthetic visual 
+                                Our mission is to
+                                deliver aesthetic visual
                                 for your home
                             </h4>
                             <p class="common-text">
-                                By applying bacis psychology principles, 
-                                we are going to explain how perception 
-                                works and how we can use this understanding 
-                                to maximise the space that we occupy in 
+                                By applying bacis psychology principles,
+                                we are going to explain how perception
+                                works and how we can use this understanding
+                                to maximise the space that we occupy in
                                 our homes.
                             </p>
                         </div>
@@ -96,72 +115,72 @@
                     <h2 class="common-text common-lg-text">Our project</h2>
                     <h3 class="common-text">Introducing our first official project</h3>
                 </div>
-               <div class="lines">
-                   <span></span>
-                   <span></span>
-               </div> 
-               <div class="projects">
-                   <div class="project">
-                    <h4 class="common-text common-heading">Project Livingroom</h4>
-                    <p class="commont-text common-sm-text">A simple guide to create the perfect livingro-
-                        om for . Night Watc works beautifully in a wi-
-                        de gamut of arrangements.</p>
-                    <img class="project-img" src="./img/Livingroom.webp" alt="Livingroom">
-                   </div>
-                   <div class="project project-workspace">
-                    <h4 class="common-text common-heading">Project workspace</h4>
-                    <p class="commont-text common-sm-text">A simple guide to create the perfect livingro-
-                        om for . Night Watc works beautifully in a wi-
-                        de gamut of arrangements.</p>
-                    <img class="project-img" src="./img/Workspace.webp" alt="Workspace">
-                   </div>
-                   <div class="project">
-                    <h4 class="common-text common-heading">Library</h4>
-                    <p class="commont-text common-sm-text">A simple guide to create the perfect livingro-
-                        om for . Night Watc works beautifully in a wi-
-                        de gamut of arrangements.</p>
-                    <img class="project-img" src="./img/Library.webp" alt="Library">
-                   </div>
-               </div>
+                <div class="lines">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <h4 class="common-text common-heading">Project Livingroom</h4>
+                        <p class="commont-text common-sm-text">A simple guide to create the perfect livingro-
+                            om for . Night Watc works beautifully in a wi-
+                            de gamut of arrangements.</p>
+                        <img class="project-img" src="./img/Livingroom.webp" alt="Livingroom">
+                    </div>
+                    <div class="project project-workspace">
+                        <h4 class="common-text common-heading">Project workspace</h4>
+                        <p class="commont-text common-sm-text">A simple guide to create the perfect livingro-
+                            om for . Night Watc works beautifully in a wi-
+                            de gamut of arrangements.</p>
+                        <img class="project-img" src="./img/Workspace.webp" alt="Workspace">
+                    </div>
+                    <div class="project">
+                        <h4 class="common-text common-heading">Library</h4>
+                        <p class="commont-text common-sm-text">A simple guide to create the perfect livingro-
+                            om for . Night Watc works beautifully in a wi-
+                            de gamut of arrangements.</p>
+                        <img class="project-img" src="./img/Library.webp" alt="Library">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section-padding">
             <div class="container testimotional-block">
-                    <div class="section-heading">
-                        <h3 class="common-text common-lg-text">Testimonial</h3>
-                    </div>
-                    <div class="testimonial-images">
-                        <img src="./img/Klamby.webp" alt="#">
-                        <img src="./img/Mayoutfit.webp" alt="#">
-                        <img src="./img/zalora.webp" alt="#">
-                        <img src="./img/geulis.webp" alt="#">
-                    </div>
-                    <div class="content-block">
-                        <img class="woman-img" src="./img/woman.webp" alt="Woman">
-                        <div class="content-block-text testimonial-text">
-                            <div class="numbers">
-                                <div class="number">
-                                    <h4 class="common-text common-lg-text">105</h4>
-                                    <p class="common-text">project done</p>
-                                </div>
-                                <div class="number">
-                                    <h4 class="common-text common-lg-text">12</h4>
-                                    <p class="common-text">years of experience</p>
-                                </div>
-                                <div class="number">
-                                    <h4 class="common-text common-lg-text">10+</h4>
-                                    <p class="common-text">big company partnership</p>
-                                </div>
+                <div class="section-heading">
+                    <h3 class="common-text common-lg-text">Testimonial</h3>
+                </div>
+                <div class="testimonial-images">
+                    <img src="./img/Klamby.webp" alt="#">
+                    <img src="./img/Mayoutfit.webp" alt="#">
+                    <img src="./img/zalora.webp" alt="#">
+                    <img src="./img/geulis.webp" alt="#">
+                </div>
+                <div class="content-block">
+                    <img class="woman-img" src="./img/woman.webp" alt="Woman">
+                    <div class="content-block-text testimonial-text">
+                        <div class="numbers">
+                            <div class="number">
+                                <h4 class="common-text common-lg-text">105</h4>
+                                <p class="common-text">project done</p>
                             </div>
-                            <p class="common-text roscoe-block">
-                                "Not able to tell you how happy I am with interior design. 
-                                Interior design has completely surpassed our expectations. 
-                                Interior design saved my business. Interior design is worth 
-                                much more than I paid."
-                            <p class="common-text Roscoe">- Roscoe</p>
-                            </p>
+                            <div class="number">
+                                <h4 class="common-text common-lg-text">12</h4>
+                                <p class="common-text">years of experience</p>
+                            </div>
+                            <div class="number">
+                                <h4 class="common-text common-lg-text">10+</h4>
+                                <p class="common-text">big company partnership</p>
+                            </div>
                         </div>
+                        <p class="common-text roscoe-block">
+                            "Not able to tell you how happy I am with interior design.
+                            Interior design has completely surpassed our expectations.
+                            Interior design saved my business. Interior design is worth
+                            much more than I paid."
+                            <p class="common-text Roscoe">- Roscoe</p>
+                        </p>
                     </div>
+                </div>
             </div>
         </section>
         <section>
@@ -174,20 +193,21 @@
                         <div class="lines">
                             <span></span>
                             <span></span>
-                        </div> 
+                        </div>
                     </div>
                     <form class="contact-form" action="">
-                        <fieldset class="fieldset-form"> 
-                            <input type="text" class="input" placeholder="Full name" type="Full-name">
-                            <input type="email" class="input" placeholder="Email adress" type="Email-adress">
-                        <div class="form-div">
-                            <input type="text" class="input description-input" placeholder="Description" type="Description">
+                        <fieldset class="fieldset-form">
+                            <input type="text" maxlength="255" class="input" placeholder="Full name" type="Full-name">
+                            <input type="email" maxlength="255" class="input" placeholder="Email adress"
+                                type="Email-adress">
+                            <div class="form-div">
+                                <input type="text" maxlength="255" class="input description-input"
+                                    placeholder="Description" type="Description">
                             <button class="btn btn-notrounded contact-btn">
                                 Send now
                             </button>
                         </div>
                         </fieldset>
-
                     </form>
                 </div>
             </div>

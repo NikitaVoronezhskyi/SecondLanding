@@ -388,6 +388,22 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10%;
+} 
+.burger-btn{
+    display: block;
+    cursor: pointer;
+    background-color: inherit;
+    visibility: hidden;
+    position: relative;
+    z-index: 150000;
+    border:none;
+}
+.burgerLine{
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 8px 0;
+    transition: 0.3s;
 }
 
 .desktop-nav {
@@ -559,7 +575,6 @@ body {
 }
 
 .roscoe-block {
-    background: url(/img/quotes.png) no-repeat;
     background-position: 0%;
     z-index: 10;
 }
@@ -671,6 +686,7 @@ body {
 
     .first-block {
         display: flex;
+        position: relative;
     }
 
     .first-image {
@@ -764,7 +780,7 @@ body {
         .woman-img {
             max-width: 40%;
         }
-    }
+    }   
 
     @media (max-width: 991.98px) {
         .container {
@@ -775,7 +791,48 @@ body {
         }
 
         .desktop-nav {
-            display: none;
+/*             visibi   lity: hidden; */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 100000;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            transition: 0.3s;
+            transform: translateX(-100%);
+        }
+        .burgerLine1{
+            transform-origin: 0%;
+        }
+        .burgerLine3{
+            transform-origin: 0%;
+        }
+        body.burger-active .desktop-nav{
+            visibility: visible;
+            transform: translateX(0);
+        }
+        body.burger-active .burger-btn>.burgerLine1{    
+            transform: rotate(45deg);
+            transform-origin: 0%;
+        }
+        body.burger-active .burger-btn>.burgerLine2{    
+            opacity: 0;
+        }
+        body.burger-active .burger-btn>.burgerLine3{    
+            transform: rotate(-45deg);
+        }
+        .nav{
+            flex: initial;
+            flex-direction: column;
+            gap: 50px;
+        }
+        .burger-btn{
+            visibility: visible;
         }
 
         .common-text {
@@ -860,7 +917,7 @@ body {
             padding: 0px 20px;
         }
         .btn{
-            font-size: 28px;
+            font-size: 20px;
             padding: 15px 80px;
 
         }
