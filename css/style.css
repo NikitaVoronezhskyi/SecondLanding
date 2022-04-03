@@ -305,7 +305,7 @@ body {
 }
 
 :root {
-    --main-color: #58A9A5;
+    --main-color: #42938f;
     --black: #1C2323;
     --dark-grey: #404242;
     --light-grey: #486958;
@@ -508,11 +508,20 @@ body {
 .second-text {
     background: inherit;
 }
+.third-text{
+    padding: 0px 110px 0px 0px;
+}
 
 .see-video {
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 30px;
     font-weight: 500;
+}
+.play-video::before{
+    font-size: 24px;
+    color: var(--dark-grey);
 }
 
 .second-block {
@@ -639,6 +648,8 @@ body {
 }
 
 .description-input {
+    clear: left;
+    float: left;
     justify-content: center;
     height: 160px;
     border: none;
