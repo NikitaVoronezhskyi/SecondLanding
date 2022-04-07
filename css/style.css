@@ -535,7 +535,7 @@ body {
     gap: 30px;
     font-weight: 500;
 }
-.play-video::before{
+.about-first-block-button-play::before{
     font-size: 32px;
     color: var(--dark-grey);
 }
@@ -819,6 +819,9 @@ body {
 
         .content-block-text{
             min-height: 221px;
+        }
+        .about-first-block-button-play::before{
+            font-size: 24px;
         }
 
         .recomendation-images {
