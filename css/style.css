@@ -334,7 +334,7 @@ body {
     font-size: 20px;
 }
 
-.common-heading {
+.common-title {
     color: var(--black);
     font-size: 40px;
     font-weight: 700;
@@ -376,7 +376,7 @@ body {
     padding: 120px 0px
 }
 
-.section-heading {
+.title {
     text-align: center;
 }
 
@@ -479,23 +479,23 @@ body {
     display: flex;
 }
 
-.how-block {
+.about-block {
     margin-top: 71px;
     display: flex;
     gap: 150px;
     flex-direction: column;
 }
 
-.content-block {
+.content-block{
     display: flex;
     align-items: center;
 }
 
-.first-image {
+.about-first-image {
     max-height: 350px;
 }
 
-.content-block-text {
+.content-block-text{
     display: flex;
     min-height: 350px;
     flex-direction: column;
@@ -505,10 +505,10 @@ body {
     background-color: var(--light-blue);
 }
 
-.second-text {
+.about-second-text {
     background: inherit;
 }
-.third-text{
+.about-third-text{
     padding: 0px 110px 0px 0px;
 }
 
@@ -524,19 +524,19 @@ body {
     color: var(--dark-grey);
 }
 
-.second-block {
+.about-second-block {
     background: inherit;
     display: flex;
     align-items: flex-start;
 }
-.third-block{
+.about-third-block{
     flex-direction: row-reverse;
 }
 
-.second-img {
+.about-second-img {
     max-height: 650px;
 }
-.eco-img{
+.about-trird-img{
     width: 50%;
 }
 
@@ -546,7 +546,7 @@ body {
     margin-top: 94px;
 }
 
-.project>.common-heading {
+.project>.common-title {
     color: var(--main-color);
 }
 
@@ -556,21 +556,21 @@ body {
     gap: 25px;
 }
 
-.project-workspace {
+.project-second-block {
     flex-direction: column-reverse;
 }
 
-.testimonial {
+.recomendation {
     display: flex;
     gap: 100px;
 }
 
-.testimonial-text {
+.recomendation-text {
     min-height: 700px;
 
 }
 
-.testimonial-images {
+.recomendation-images {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -592,7 +592,7 @@ body {
     color: var(--main-color);
 }
 
-.testimonial-text>.common-text {
+.recomendation-text>.common-text {
     font-style: italic;
     font-size: 25px;
 }
@@ -648,6 +648,9 @@ body {
 }
 
 .description-input {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
     clear: left;
     float: left;
     justify-content: center;
@@ -687,7 +690,7 @@ body {
         font-size: 18px;
     }
 
-    .common-heading {
+    .common-title {
         font-size: 36px;
     }
 
@@ -714,35 +717,35 @@ body {
         position: relative;
     }
 
-    .first-image {
+    .about-first-image {
         max-width: 70%;
     }
 
-    .content-block-text {
+    .content-block-text{
         min-height: 262px;
         gap: 20px;
         padding: 20px;
     }
 
-    .second-block {
+    .about-second-block {
         gap: 50px;
     }
 
-    .second-img {
+    .about-second-img {
         max-width: 40%;
     }
 
-    .woman-img {
+    .recomendation-img {
         max-width: 45%;
     }
 
-    .testimonial-text {
+    .recomendation-text {
         min-height: 583px;
         gap: 50px;
         padding: 10px 50px;
     }
 
-    .testimonial-images {
+    .recomendation-images {
         gap: 40px;
     }
 
@@ -750,7 +753,7 @@ body {
         gap: 40px;
     }
 
-    .testimonial-text>.common-text {
+    .recomendation-text>.common-text {
         font-size: 21px;
     }
 
@@ -771,7 +774,7 @@ body {
             font-size: 40px;
         }
 
-        .common-heading {
+        .common-title {
             font-size: 32px;
         }
 
@@ -784,25 +787,25 @@ body {
             font-size: 24px;
         }
 
-        .woman-block {
+        .recomendation-block {
             margin-top: 50px;
         }
 
-        .content-block-text {
+        .content-block-text{
             min-height: 221px;
         }
 
-        .testimonial-images {
+        .recomendation-images {
             flex-direction: column;
             gap: 50px;
         }
 
-        .testimonial-text {
+        .recomendation-text {
             gap: 30px;
             min-height: 437px;
         }
 
-        .woman-img {
+        .recomendation-img {
             max-width: 40%;
         }
     }   
@@ -872,7 +875,7 @@ body {
             font-size: 30px;
         }
 
-        .common-heading {
+        .common-title {
             font-size: 24px;
         }
 
@@ -884,11 +887,11 @@ body {
             max-width: 350px;
         }
 
-        .content-block {
+        .content-block{
             flex-direction: column;
         }
 
-        .first-image {
+        .about-first-image {
             max-width: 100%;
         }
 
@@ -896,15 +899,15 @@ body {
             text-align: center;
         }
 
-        .second-block {
+        .about-second-block {
             text-align: center;
             align-items: center;
         }
 
-        .second-img {
+        .about-second-img {
             max-width: 50%;
         }
-        .eco-img{
+        .about-trird-img{
             width: 80%;
         }
 
@@ -921,11 +924,11 @@ body {
             max-width: 300px;
         }
 
-        .woman-img {
+        .recomendation-img {
             max-width: 60%;
         }
 
-        .testimonial-text {
+        .recomendation-text {
             max-width: 432px;
         }
 
@@ -933,7 +936,7 @@ body {
             align-items: flex-start;
         }
 
-        .testimonial-text>.common-text {
+        .recomendation-text>.common-text {
             font-size: 18px;
         }
 
@@ -966,10 +969,10 @@ body {
         .content-block-text{
             min-height: 0;
         }
-        .project-workspace{
+        .project-second-block{
             flex-direction: column;
         }
-        .common-heading {
+        .common-title {
             font-size: 22px;
         }
 
@@ -994,13 +997,13 @@ body {
             width: 350px;
         }
 
-        .second-img {
+        .about-second-img {
             max-width: inherit;
             height: 350px;
             width: 346px;
         }
 
-        .woman-img {
+        .recomendation-img {
             max-width: 100%;
             height: 341px;
             width: 300px;
@@ -1019,7 +1022,7 @@ body {
             flex-direction: column;
         }
 
-        .testimonial-text {
+        .recomendation-text {
             padding: 20px;
             max-width: 300px;
         }
@@ -1028,7 +1031,7 @@ body {
             background: none;
         }
 
-        .testimonial-text>.common-text {
+        .recomendation-text>.common-text {
             font-size: 16px;
         }
         .contact-us{
