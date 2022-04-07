@@ -28,7 +28,7 @@
                         <li><a class="common-text nav-text" href="#">Location</a></li>
                         <li><a class="common-text nav-text" href="#">About us</a></li>
                     </ul>
-                    <button class="btn">Sign Up</button>
+                    <button type="button" class="btn">Sign Up</button>
                 </div>
                 <button aria-label="Burger" class="burger-btn">
                     <div class="burgerLine burgerLine1"></div>
@@ -47,7 +47,7 @@
         </div>
     </header>
     <main>
-        <section class="promo section-padding">
+        <section class="promo section">
             <div class="promo-block container">
                 <div class="promo-text">
                     <h1 class="common-text common-lg-text">
@@ -61,7 +61,7 @@
                         a residentical design with an extraordinary touch
                         of art.
                     </p>
-                    <button class="btn btn-notrounded">
+                    <button type="button" class="btn btn-notrounded">
                         Let’s go
                     </button>
                 </div>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section class="about section-padding">
+        <section class="about section">
             <div class="container">
                 <div class="title">
                     <h2 class="common-text common-lg-text">How it works</h2>
@@ -79,15 +79,15 @@
                 <div class="about-block">
                     <article class="content-block about-first-block">
                         <img class="about-first-image" src="./img/FirstblockImg.webp" alt="FirstblockImg">
-                        <div class="content-block-text">
+                        <div class="content-block-text about-first-block-text">
                             <p class="common-text common-sm-text">We provide design and build
                                 for commercial building,
                                 interior and furniture to improve
                                 the better life.</p>
-                            <div aria-label="Play Video" class="common-text common-sm-text see-video">
+                            <button type="button" aria-label="Play Video" class="common-text common-sm-text about-first-block-button">
                                 S E E V I D E O
                                 <i class="fa-regular fa-circle-play play-video"></i>                                       
-                            </div>
+                            </button>
                         </div>
                     </article>
                     <article class="content-block about-second-block">
@@ -121,15 +121,15 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio section-padding">
+        <section class="portfolio section">
             <div class="container">
                 <div class="title">
                     <h2 class="common-text common-lg-text">Our project</h2>
                     <h3 class="common-text">Introducing our first official project</h3>
-                </div>
-                <div class="lines">
-                    <span></span>
-                    <span></span>
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
                 <div class="projects">
                     <div class="project">
@@ -156,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section class="recomendation section-padding">
+        <section class="recomendation section">
             <div class="container recomendation-block">
                 <div class="title">
                     <h3 class="common-text common-lg-text">Testimonial</h3>
@@ -167,7 +167,7 @@
                     <img src="./img/zalora.webp" alt="#">
                     <img src="./img/geulis.webp" alt="#">
                 </div>
-                <div class="content-block">
+                <div class="content-block recomendation-content-block">
                     <img class="recomendation-img" src="./img/woman.webp" alt="Woman">
                     <div class="content-block-text recomendation-text">
                         <div class="numbers">
@@ -195,26 +195,26 @@
                 </div>
             </div>
         </section>
-        <section class="contact section-padding contact-padding">
+        <section class="contact section">
             <div class="container">
                 <div class="contact-us">
                     <div class="contact-text">
                         <h3 class="common-text common-lg-text">Contact Us</h3>
                         <p class="common-text">Have any questions? Want help
                             before getting started?</p>
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                        </div>
+                            <div class="lines">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
                     </div>
                     <form class="contact-form" action="">
                         <fieldset class="fieldset-form">
-                            <input type="text" name="Name" maxlength="255" class="input" placeholder="Full name">
-                            <input type="email" name="E-mail" maxlength="255" class="input" placeholder="Email adress">
+                            <input required title="Example: Name Surname" aria-label="Full Name" type="text" name="Name" maxlength="60" class="input" placeholder="Full name">
+                            <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Example: yourname@gmail.com" aria-label="Email" type="email" name="E-mail" maxlength="40" class="input" placeholder="Email adress">
                             <div class="form-div">
-                                <textarea type="text" maxlength="255" class="input description-input"
+                                <textarea aria-label="Description" name="Area" type="text" maxlength="255" class="input description-input"
                                     placeholder="Description"></textarea>
-                            <button class="btn btn-notrounded contact-btn">
+                            <button type="submit" class="btn btn-notrounded contact-btn">
                                 Send now
                             </button>
                         </div>
